@@ -13,7 +13,9 @@ Hi! Follow steps below to setup and run this application in your local.
 
 # Postman Collection
 
-The Postman collection can be found [here](1Password.postman_collection.json).
+The Postman collection can be found [here](events.postman_collection.json).
+
+If you do not have Postman, that's ok. You can use the cURL commands provided.
 
 # Events API
 
