@@ -7,10 +7,11 @@ import { Metrics } from '../../src/interfaces/Metrics';
 describe("Test app.ts", () => {
   let req: Event;
   let res: Metrics;
+  const currentTimestamp: string = new Date(Date.now()).toISOString();
 
   beforeAll(() => {
     req = {
-      "timestamp": "2024-05-04T05:57:46Z",
+      "timestamp": currentTimestamp,
       "userId": "9ea5ec0c-3e15-4598-82a6-73060dd37090",
       "accountId": "12e839cc-a22c-4a9e-b1df-227fcb2a967f",
       "eventType": "SignIn"
@@ -75,7 +76,7 @@ describe("Test app.ts", () => {
     });
     it('Metrics should go up when another New Device event comes in', async () => {
       await request(app).post('/events').send({
-        "timestamp": "2024-05-04T05:57:46Z",
+        "timestamp": currentTimestamp,
         "userId": "9ea5ec0c-3e15-4598-82a6-73060dd37090",
         "accountId": "12e839cc-a22c-4a9e-b1df-227fcb2a967f",
         "eventType": "NewDevice"
