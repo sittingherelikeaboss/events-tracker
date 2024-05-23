@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "5d199f6a-af7a-4388-8c78-a32db94fc17e",
-		"name": "1Password",
+		"name": "Events API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "7180020"
 	},
